@@ -1,14 +1,12 @@
 function MyNavBar() {
     return (
-        <nav className='navBar'>
-            <div className='navLeft'>
-                <ul>
-                    <li>About Me</li>
-                    <li>Portfolio</li>
-                    <li className="navRight">Themes</li>
-
-                </ul>
-            </div>
+        <nav className='navBar' id="top">        
+            <ul>
+                <li>Home</li>
+                <li>About Me</li>
+                <li>Projects</li>
+                <li>Themes</li>
+            </ul>         
         </nav>
     )
 }

@@ -1,41 +1,76 @@
-
-.heroText{
-  font-size: 120px;
-  position: relative;
-  z-index: 2;
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
 }
-.heroBG {
+
+.heroSpace {
+  background-color: rgb(40, 41, 43);
+}
+.heroBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
   position: absolute;
-  z-index: 13;
-  top: 1;
+  top: 28%;
+  
+
+  font-size: 350%;
+  color: azure;
+
+  /*
+  the css within this comment are for content
+  to eventually be contained in other themes
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  width: 500px;
+  height: 250px;
+  background-color: rgba(240, 240, 240,0.2);
+  backdrop-filter: blur(5px);*/
 }
-
-
+.heroBox a{
+  font-size: 60%;
+}
 
 
 .navBar ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  /*margin: 0;*/
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 10px 0;
   overflow: hidden;
   position: sticky;
-  top: 0;
+  /*top: 0;*/
+  display: flex;
+  justify-content: center;
 }
 .navBar li {
-  display: block;
-  float: left;
+  display: flex;
   text-align: center;
   padding: 10px;
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(0, 0, 0);
+  justify-content: center;
+  gap: 20px;
+}
+
+/*
+.navLeft {
+    float: left;
 }
 .navRight {
-  position: relative;
   float: right;
-
 }
+*/
 
-SS
 
+
+
+
+
+
+/*10ft pole begone creature*/
 .ghost-fibers-container {
   position: relative;
   width: 100%;
