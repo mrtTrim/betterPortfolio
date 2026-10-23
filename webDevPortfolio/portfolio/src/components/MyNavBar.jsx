@@ -3,7 +3,7 @@ function MyNavBar() {
         <nav className='navBar' id="top">        
             <ul>
                 <li>Home</li>
-                <li>About Me</li>
+                <li>Resume</li>
                 <li>Projects</li>
                 <li>Themes</li>
             </ul>         
