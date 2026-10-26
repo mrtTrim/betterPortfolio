@@ -1,39 +1,20 @@
 //import { useState } from 'react'
-//import heroImg from './assets/hero.png'
-import Hero from './components/Hero.jsx'
-import MyNavBar from './components/MyNavBar.jsx'
-//import BGTest from './components/BGTest.jsx'
-//import GhostFibers from './component/GhostFibers';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx'
+import Projects from './pages/Projects.jsx';
+import Resume from './pages/Resume.jsx';
 
 import './App.css'
 
 function App() {
   return (
-    <div>
-      <MyNavBar />
-      <section> 
-          <Hero />
-
-      
-
-      </section>
-      <section id="spacer"></section>
-      <main>
-        <h1>stuff</h1>
-                <h1>stuff</h1>
-        <h1>stuff</h1>
-        <h1>stuff</h1>
-        <h1>stuff</h1>
-        <h1>stuff</h1>
-        <h1>stuff</h1>
-        <h1>stuff</h1>
-        <h1>stuff</h1>
-        <h1>stuff</h1>
-
-      </main>
-      
-
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+    </HashRouter>
   )
 }
 

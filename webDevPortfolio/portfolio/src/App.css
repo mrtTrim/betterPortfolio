@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-
+/*HERO RULES*/
 .heroSpace {
   background-color: rgb(40, 41, 43);
 }
@@ -38,7 +38,7 @@
   font-size: 60%;
 }
 
-
+/*NAVBAR RULES*/
 .navBar ul{
   list-style-type: none;
   /*margin: 0;*/
@@ -59,7 +59,6 @@
   justify-content: center;
   gap: 20px;
 }
-
 /*
 .navLeft {
     float: left;
@@ -69,6 +68,22 @@
 }
 */
 
+
+
+/*RADIAL SOCIALS MENU RULES*/
+
+
+
+
+
+
+/*
+.toggleBtn:checked-.social button:nth-of-type(3) {
+  transform: translate(100px, 0) scale(1);
+  opacity: 1;
+  transition: 0.3s;
+}
+  */
 
 
 
