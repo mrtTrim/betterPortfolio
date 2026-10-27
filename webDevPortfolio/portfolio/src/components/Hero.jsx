@@ -1,4 +1,6 @@
 import '../App.css'
+import {Link} from 'react-router-dom';
+
 //import BGTest from './BGTest.jsx'
 import GhostFibers from '../component/GhostFibers';
 
@@ -8,7 +10,7 @@ function Hero() {
             <header className='heroSpace'>
                 <div className='heroBox'>
                     <h1>Madelyn's Portfolio</h1>
-                    <a href='#'>Resume </a>
+                    <Link to='/resume' className='heroLink'>Resume &gt;&gt;</Link>
                 </div>
                 
 
@@ -53,6 +55,7 @@ function Hero() {
                         />
                     </div>
                 </div>
+
             </header>
     )
 }

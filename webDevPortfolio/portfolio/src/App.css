@@ -36,6 +36,15 @@
 }
 .heroBox a{
   font-size: 60%;
+  z-index: 1;
+}
+.heroLink {
+  color: azure;
+  text-decoration: none;
+
+}
+.heroLink:hover {
+  color: aqua;
 }
 
 /*NAVBAR RULES*/
@@ -58,7 +67,15 @@
   border-right: 1px solid rgb(0, 0, 0);
   justify-content: center;
   gap: 20px;
+  color: black;
 }
+.navBar li:last-child {
+  border-right: 0;
+}
+.navLink {
+  text-decoration: none;
+}
+
 /*
 .navLeft {
     float: left;
@@ -69,12 +86,111 @@
 */
 
 
+h2 {
+  font-size: 40px;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+/*Cards*/
+.cardContainer {
+  display: flex;
+  /*overflow-x: auto;*/
 
-/*RADIAL SOCIALS MENU RULES*/
+}
+.card {
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  width: 30dvw;
+  border-radius: 10px;
+}
+.card img {
+  padding-left: 13%;
+  padding-top: 5%;
+
+  object-fit: contain;
+}
+.card h4 {
+  font-size: 20px;
+}
+.cardDesc {
+  padding: 20px;
+  padding-top: 10px;
+}
+
+
+footer {
+  background-color: rgb(40, 41, 43);
+  color: azure;
+  margin-top: 20px;
+}
+
+/*Socials*/
+.githubLogo {
+  background-image: url('./assets/github.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+
+  display: inline-block;
+}
+.linkedinLogo {
+  background-image: url('./assets/linkedin.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+
+  display: inline-block;
+
+}
+
+
+.socialItem a {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: black;
+  border: 3px solid black;
+  overflow: hidden;
+  z-index: 1;
+}
+.socialItem a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: cyan;
+  z-index: 0;
+  scale: 1 0;
+  transform-origin: bottom;
+  transition: scale 0.5s ease;
+}
+.socialItem:hover a::before {
+  scale: 1 1;
+}
+.icon {
+  font-size: 2rem;
+  color: hsl(203, 92%, 8%);
+  transition: 0.5s ease;
+  z-index: 2;
+}
+.socialItem a:hover .icon {
+  color: #fff;
+  transform: rotateY('360deg');
+}
+.socialItem :nth-child(2) {
+  background-color: #0077b5;
+}
 
 
 
 
+.themesList {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
 
 
 /*
